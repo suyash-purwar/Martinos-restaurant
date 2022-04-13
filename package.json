@@ -1,0 +1,25 @@
+{
+  "name": "martinos",
+  "version": "1.0.0",
+  "description": "A website for an hypothetical Italian restaurant",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suyash-Purwar/Martinos-restaurant.git"
+  },
+  "author": "Suyash Purwar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Suyash-Purwar/Martinos-restaurant/issues"
+  },
+  "homepage": "https://github.com/Suyash-Purwar/Martinos-restaurant#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}

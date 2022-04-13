@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.65; }
+
+a {
+  text-decoration: none; }
+
+.t-align-center {
+  text-align: center !important; }
+
+.margin-t-small {
+  margin-top: 1.5rem !important; }
+
+.margin-t-medium {
+  margin-top: 3rem !important; }
+
+.margin-t-big {
+  margin-top: 4.5rem !important; }
+
+.margin-t-huge {
+  margin-top: 6rem !important; }
+
+.margin-b-small {
+  margin-bottom: 1.5rem !important; }
+
+.margin-b-medium {
+  margin-bottom: 3rem !important; }
+
+.margin-b-big {
+  margin-bottom: 4.5rem !important; }
+
+.margin-b-huge {
+  margin-bottom: 6rem !important; }
+
+.grid {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] minmax(min-content, 1fr) [col-end]);
+  grid-gap: 2rem;
+  padding: 0 1rem; }
+  .grid__full {
+    grid-column: span 12; }
+  .grid__half {
+    grid-column: span 6; }
+  .grid__third {
+    grid-column: span 4; }
+  .grid__span1 {
+    grid-column: span 1; }
+  .grid__span2 {
+    grid-column: span 2; }
+  .grid__span3 {
+    grid-column: span 3; }
+  .grid__span4 {
+    grid-column: span 4; }
+  .grid__span5 {
+    grid-column: span 5; }
+  .grid__span6 {
+    grid-column: span 6; }
+  .grid__span7 {
+    grid-column: span 7; }
+  .grid__span8 {
+    grid-column: span 8; }
+  .grid__span9 {
+    grid-column: span 9; }
+  .grid__span10 {
+    grid-column: span 10; }
+  .grid__span11 {
+    grid-column: span 11; }
+  .grid__span12 {
+    grid-column: span 12; }
+  .grid__align-v {
+    align-items: center; }

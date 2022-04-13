@@ -1,3 +1,15 @@
-h1 {
-    color: red;
-}
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+@import "base/animations";
+
+@import "layout/nav";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/home";
