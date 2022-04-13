@@ -2,7 +2,7 @@
     max-width: $grid-max-width;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(12, [col-start] minmax(min-content, 1fr) [col-end]);
+    grid-template-columns: repeat(12, 1fr);
     grid-gap: 2rem;
     padding: 0 1rem;
 
