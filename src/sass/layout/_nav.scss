@@ -1,0 +1,27 @@
+.nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+
+    &__wrapper {
+        align-items: center;
+    }
+
+    &__logo {
+        height: 2rem;
+    }
+
+    &__items {
+        justify-self: end;
+    }
+
+    &__item {
+        display: inline-block;
+        margin: 0 1.5rem;
+        padding: 0 .5rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $color-white;
+    }
+}

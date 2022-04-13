@@ -3,12 +3,13 @@
     height: 100vh;
     background-image: url("../assets/images/hero-bg.png");
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
     position: relative;
     
     &__content {
         width: $grid-max-width;
         position: absolute;
+        padding: 0 1rem;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -47%);
