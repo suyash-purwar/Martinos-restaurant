@@ -12,11 +12,37 @@ html {
 body {
   font-family: "Raleway", sans-serif;
   color: #ffffff;
-  font-weight: 500;
   line-height: 1.65; }
 
 a {
   text-decoration: none; }
+
+.hero__heading {
+  font-family: "Amiri", serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 4.2rem;
+  line-height: 1;
+  text-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.5); }
+
+.hero__subheading {
+  text-transform: uppercase;
+  font-size: 8rem;
+  display: block;
+  letter-spacing: 4px; }
+
+.hero__underline {
+  background-color: #ff703b;
+  border: 0.7rem solid #ff703b;
+  width: 9rem;
+  margin-top: -.7rem; }
+
+.hero__description {
+  width: 80%;
+  line-height: 1.7;
+  font-weight: 500;
+  font-size: 1.7rem;
+  text-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.8); }
 
 .t-align-center {
   text-align: center !important; }
@@ -45,8 +71,26 @@ a {
 .margin-b-huge {
   margin-bottom: 6rem !important; }
 
+.primary-button {
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  background-color: #ff703b;
+  padding: .9rem 2.4rem;
+  box-shadow: 0.9rem 0.6rem 0 rgba(255, 112, 59, 0.5);
+  border: none;
+  border-radius: 2px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  transition: .3s; }
+  .primary-button:hover {
+    box-shadow: none;
+    transform: scale(1.04); }
+
 .grid {
-  max-width: 120rem;
+  max-width: 114rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(12, [col-start] minmax(min-content, 1fr) [col-end]);
@@ -84,3 +128,17 @@ a {
     grid-column: span 12; }
   .grid__align-v {
     align-items: center; }
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/images/hero-bg.png");
+  background-size: cover;
+  background-position: center center;
+  position: relative; }
+  .hero__content {
+    width: 114rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -47%); }

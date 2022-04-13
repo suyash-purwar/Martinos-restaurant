@@ -1,0 +1,29 @@
+.hero {
+    &__heading {
+        font-family: $secondary-font-family;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: 4.2rem;
+        line-height: 1;
+        text-shadow: 0 .4rem 1.5rem rgba($color-black, 0.5);
+    }
+    &__subheading {
+        text-transform: uppercase;
+        font-size: 8rem;
+        display: block;
+        letter-spacing: 4px;
+    }
+    &__underline {
+        background-color: $primary-color;
+        border: .7rem solid $primary-color;
+        width: 9rem;
+        margin-top: -.7rem;
+    }
+    &__description {
+        width: 80%;
+        line-height: 1.7;
+        font-weight: 500;
+        font-size: 1.7rem;
+        text-shadow: 0 .4rem 1rem rgba($color-black, 0.8);
+    }
+}

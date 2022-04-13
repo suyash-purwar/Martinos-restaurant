@@ -1,0 +1,16 @@
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/images/hero-bg.png");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    
+    &__content {
+        width: $grid-max-width;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -47%);
+    }
+}
