@@ -101,3 +101,21 @@
         font-family: $secondary-font-family;
     }
 }
+
+.menu {
+    &__card-heading {
+        font-size: 1.7rem;
+        font-weight: 400;
+        line-height: 1.2;   
+        letter-spacing: .5px;
+    }
+
+    &__card-weight {
+        font-size: 1.5rem;
+        color: $color-grey;
+    }
+
+    &__card-price {
+        font-size: 1.7rem;
+    }
+}

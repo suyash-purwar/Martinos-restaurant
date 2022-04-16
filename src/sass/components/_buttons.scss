@@ -17,3 +17,60 @@
         transform: scale(1.04);
     }
 }
+
+.carousel-buttons {
+    margin-top: 1rem;
+    text-align: center;
+
+    button {
+        cursor: pointer;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 100%;
+        background-position: center center;
+        background-size: 80%;
+        border: 3px solid $color-white;
+        background-repeat: no-repeat;
+        display: inline-block;
+        transition: 0.3s all;
+        
+        &:first-child {
+            margin-right: 1.5rem;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    #menu_carousel_btn_left {
+        background-color: transparent;
+        background-image: url("../assets/icons/back-arrow-white.png");
+        opacity: 0.7;
+    }
+
+    #menu_carousel_btn_right {
+        background-color: $color-white;
+        background-image: url("../assets/icons/forward-arrow-black.png");
+    }
+}
+
+.menu__card-btn {
+	border: none;
+	font-size: 1.6rem;
+	font-weight: 500;
+	font-family: $primary-font-family;
+	display: inline-block;
+	letter-spacing: .7px;
+	border-radius: .3rem;
+	background-color: $primary-color;
+	padding: 1rem 2rem;
+	color: $color-white;
+	cursor: pointer;
+	transition: .3s all;
+	box-shadow: 5px 5px 0 rgba($primary-color, 0.4);
+	&:hover {
+		transform: scale(1.03);
+		box-shadow: none;
+	}
+}

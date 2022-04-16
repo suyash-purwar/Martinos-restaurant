@@ -35,7 +35,6 @@
 }
 
 .services {
-    width: 100%;
     background-image: url("../assets/images/best-services-bg.png");
     background-size: cover;
     background-position: top center;
@@ -64,8 +63,92 @@
             justify-self: end;
         }
     }
+}
+
+.menu {
+    background-image: url('../assets/images/menu-bg.png');
+    background-position: center center;
+    padding: 12rem 0;
+
+    &__content {
+        grid-column-gap: 8rem;
+        grid-template-rows: min-content;
+    }
+
+    &__nav {
+        list-style-type: none;
+    }
+
+    &__nav-item {
+        font-size: 1.8rem;
+        padding: 5px 0 5px 10px;
+        color: white;
+        font-weight: 500;
+        line-height: 1;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-bottom: 2.5rem;
+        }
+
+        &--active {
+            color: $primary-color;
+            margin-left: -3px;
+            border-left: 3px solid $primary-color;
+        }
+    }
+
+    &__carousel-buttons {
+        grid-column: 2 / span 11;
+    }
+
+    
+    &__deck {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 55vh;
+        grid-gap: 5rem;
+        transform: .2s all;
+    }
+
+    &__card {
+        background-color: rgba(#8c8c8c, .3);
+        backdrop-filter: blur(10px);
+        box-shadow: 3px 3px 10px rgba($color-black, 0.5);
+        border-radius: 1rem;
+        cursor: pointer;
+        transition: 0.2s all;
+
+        &:hover {
+            transform: scale(1.02) translateY(-.5rem);
+        }
+    }
+
+    &__card-img {
+        height: 47%;
+        border-radius: 1rem 1rem 0 3rem;
+        overflow: hidden;
+        position: relative;
+
+            img {
+                width: 100%;
+                @include absCenterY;
+            }
+    }
 
     &__card-content {
+        padding: 2rem;
+        height: 53%;
+        display: grid;
+        grid-template-rows: auto, repeat(2, 1fr);
+        align-self: start;
+    }
 
+    &__card-price-n-btn-container {
+        display: flex;
+        justify-content: space-between;
+        align-self: end;
+        align-items: center;
     }
 }

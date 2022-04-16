@@ -12,6 +12,11 @@ const sendAssets = () => {
         .pipe(dest("dist/assets/"));
 };
 
+const sendJs = () => {
+    return src("src/js/*.js")
+        .pipe(dest("dist/js/"));
+};
+
 const compileSass = () => {
     return src("src/sass/*.scss")
         .pipe(sass())
@@ -35,6 +40,7 @@ const browsersyncReload = cb => {
 
 const watchTask = () => {
     watch('src/**/*.html', series(sendHtml, browsersyncReload));
+    watch('src/js/*.js', series(sendJs, browsersyncReload));
     watch('src/sass/**/*.scss', series(compileSass, browsersyncReload));
     watch('src/assets/**/*.png', series(sendAssets, browsersyncReload));
 };
@@ -43,6 +49,7 @@ exports.default = series(
     sendHtml,
     sendAssets,
     compileSass,
+    sendJs,
     browswesyncServe,
     watchTask
 );

@@ -98,6 +98,19 @@ a {
   font-weight: 400;
   font-family: "Amiri", serif; }
 
+.menu__card-heading {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: .5px; }
+
+.menu__card-weight {
+  font-size: 1.5rem;
+  color: #d4d4d4; }
+
+.menu__card-price {
+  font-size: 1.7rem; }
+
 .t-align-center {
   text-align: center !important; }
 
@@ -150,6 +163,50 @@ a {
   .primary-button:hover {
     box-shadow: none;
     transform: scale(1.04); }
+
+.carousel-buttons {
+  margin-top: 1rem;
+  text-align: center; }
+  .carousel-buttons button {
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    background-position: center center;
+    background-size: 80%;
+    border: 3px solid #ffffff;
+    background-repeat: no-repeat;
+    display: inline-block;
+    transition: 0.3s all; }
+    .carousel-buttons button:first-child {
+      margin-right: 1.5rem; }
+    .carousel-buttons button:hover {
+      transform: scale(1.1); }
+  .carousel-buttons #menu_carousel_btn_left {
+    background-color: transparent;
+    background-image: url("../assets/icons/back-arrow-white.png");
+    opacity: 0.7; }
+  .carousel-buttons #menu_carousel_btn_right {
+    background-color: #ffffff;
+    background-image: url("../assets/icons/forward-arrow-black.png"); }
+
+.menu__card-btn {
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  display: inline-block;
+  letter-spacing: .7px;
+  border-radius: .3rem;
+  background-color: #ff703b;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: .3s all;
+  box-shadow: 5px 5px 0 rgba(255, 112, 59, 0.4); }
+  .menu__card-btn:hover {
+    transform: scale(1.03);
+    box-shadow: none; }
 
 .nav {
   position: absolute;
@@ -237,7 +294,6 @@ a {
     padding: 0; }
 
 .services {
-  width: 100%;
   background-image: url("../assets/images/best-services-bg.png");
   background-size: cover;
   background-position: top center;
@@ -256,3 +312,65 @@ a {
       justify-self: start; }
     .services__card-header--right {
       justify-self: end; }
+
+.menu {
+  background-image: url("../assets/images/menu-bg.png");
+  background-position: center center;
+  padding: 12rem 0; }
+  .menu__content {
+    grid-column-gap: 8rem;
+    grid-template-rows: min-content; }
+  .menu__nav {
+    list-style-type: none; }
+  .menu__nav-item {
+    font-size: 1.8rem;
+    padding: 5px 0 5px 10px;
+    color: white;
+    font-weight: 500;
+    line-height: 1;
+    cursor: pointer; }
+    .menu__nav-item:not(:last-child) {
+      margin-bottom: 2.5rem; }
+    .menu__nav-item--active {
+      color: #ff703b;
+      margin-left: -3px;
+      border-left: 3px solid #ff703b; }
+  .menu__carousel-buttons {
+    grid-column: 2 / span 11; }
+  .menu__deck {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 55vh;
+    grid-gap: 5rem;
+    transform: .2s all; }
+  .menu__card {
+    background-color: rgba(140, 140, 140, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.2s all; }
+    .menu__card:hover {
+      transform: scale(1.02) translateY(-0.5rem); }
+  .menu__card-img {
+    height: 47%;
+    border-radius: 1rem 1rem 0 3rem;
+    overflow: hidden;
+    position: relative; }
+    .menu__card-img img {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+  .menu__card-content {
+    padding: 2rem;
+    height: 53%;
+    display: grid;
+    grid-template-rows: auto, repeat(2, 1fr);
+    align-self: start; }
+  .menu__card-price-n-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-self: end;
+    align-items: center; }
