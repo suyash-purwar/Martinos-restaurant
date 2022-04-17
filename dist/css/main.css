@@ -74,6 +74,25 @@ a {
     background-color: rgba(255, 255, 255, 0.05);
     border: 0.8rem solid rgba(255, 255, 255, 0);
     margin-top: -3rem; }
+  .primary-heading__subtitle {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    display: block;
+    margin-top: -2.5rem;
+    word-spacing: 2px;
+    letter-spacing: .5px;
+    font-weight: 400;
+    color: #9b9b9b; }
+
+.secondary-heading {
+  font-family: "Amiri", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 3rem;
+  padding: .9rem 1rem .5rem 1.3rem;
+  border-left: 4px solid #ff703b;
+  line-height: 1; }
 
 .text {
   font-size: 1.6rem;
@@ -110,6 +129,14 @@ a {
 
 .menu__card-price {
   font-size: 1.7rem; }
+
+.contact__form-label {
+  font-size: 1.8rem;
+  letter-spacing: 1px; }
+
+.contact__list-item p {
+  font-size: 1.9rem;
+  letter-spacing: 1px; }
 
 .t-align-center {
   text-align: center !important; }
@@ -267,6 +294,26 @@ a {
   .grid__align-v {
     align-items: center; }
 
+.footer {
+  padding: 7rem 0; }
+  .footer__panel img {
+    width: 60%;
+    display: inline-block;
+    cursor: pointer; }
+  .footer__panel:first-child {
+    position: relative;
+    top: .6rem; }
+  .footer__list {
+    list-style-type: none; }
+  .footer__list-item {
+    font-size: 1.4rem;
+    color: #d4d4d4;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    cursor: pointer; }
+    .footer__list-item:not(:last-child) {
+      margin-bottom: 2rem; }
+
 .hero {
   width: 100%;
   height: 100vh;
@@ -374,3 +421,85 @@ a {
     justify-content: space-between;
     align-self: end;
     align-items: center; }
+
+.reservation {
+  padding: 12rem 0; }
+  .reservation__content {
+    padding: 5rem 0 0 0;
+    max-width: 110rem;
+    margin: 0 auto; }
+  .reservation__form {
+    grid-gap: 8rem 5rem;
+    position: relative; }
+  .reservation__form-input {
+    width: 100%;
+    padding: 1rem .5rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #ff703b;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    z-index: -1; }
+    .reservation__form-input:focus {
+      outline: none;
+      color: #fff; }
+  .reservation__form-input-carot {
+    position: absolute;
+    width: 4rem;
+    display: block;
+    right: 0rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.contact {
+  padding: 12rem 0;
+  background-image: url("../assets/images/contact-bg.png");
+  background-position: center; }
+  .contact__content {
+    grid-gap: 6rem 8rem;
+    grid-template-rows: auto, repeat(2, 1fr); }
+    .contact__content h3 {
+      align-self: start; }
+    .contact__content-left {
+      grid-row: 2 / 4; }
+    .contact__content-right-up {
+      grid-row: 2 / 3; }
+    .contact__content-right-down {
+      grid-column: 7 / span 6;
+      grid-row: 3 / 4; }
+  .contact__form {
+    padding-bottom: 3rem; }
+  .contact__form-input-row:not(:last-child) {
+    margin-bottom: 4rem; }
+  .contact__form-label {
+    display: block;
+    margin-bottom: .6rem; }
+  .contact__form-input {
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #ff703b;
+    background-color: transparent;
+    padding: .8rem 0rem;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.7rem;
+    font-family: "Raleway", sans-serif; }
+    .contact__form-input:focus {
+      outline: none;
+      color: #fff; }
+  .contact__list {
+    list-style-type: none; }
+  .contact__list-item:not(:last-child) {
+    margin-bottom: 1.7rem; }
+  .contact__list-item--social-media img {
+    cursor: pointer;
+    width: 3rem;
+    display: inline-block;
+    margin-right: 1.5rem;
+    transition: all .2s; }
+    .contact__list-item--social-media img:nth-child(4) {
+      width: 3.3rem; }
+    .contact__list-item--social-media img:hover {
+      transform: scale(1.08); }

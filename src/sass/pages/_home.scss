@@ -152,3 +152,129 @@
         align-items: center;
     }
 }
+
+.reservation {
+    padding: 12rem 0;
+
+    &__content {
+        padding: 5rem 0 0 0;
+        max-width: $grid-max-width;
+        margin: 0 auto;
+    }
+
+    &__form {
+        grid-gap: 8rem 5rem;
+        position: relative;
+    }
+
+    &__form-input {
+        width: 100%;
+        padding: 1rem .5rem;
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px solid $primary-color;
+        color: rgba($color-black, 0.7);
+        font-size: 1.8rem;
+        font-weight: 400;
+        font-family: $primary-font-family;
+        z-index: -1;
+
+        &:focus {
+            outline: none;
+            color: #fff;
+        }
+    }
+
+    &__form-input-carot {
+        position: absolute;
+        width: 4rem;
+        display: block;
+        right: 0rem;
+        @include absCenterY;
+    }
+}
+
+.contact {
+    padding: 12rem 0;
+    background-image: url("../assets/images/contact-bg.png");
+    background-position: center;
+
+    &__content {
+        grid-gap: 6rem 8rem;
+        grid-template-rows: auto, repeat(2, 1fr);
+
+        h3 {
+            align-self: start;
+        }
+
+        &-left {
+            grid-row: 2 / 4;
+        }
+
+        &-right-up {
+            grid-row: 2 / 3;
+        }
+
+        &-right-down {
+            grid-column: 7 / span 6;
+            grid-row: 3 / 4;
+        }
+    }
+
+    &__form {
+        padding-bottom: 3rem;
+    }
+
+    &__form-input-row {
+        &:not(:last-child) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__form-label {
+        display: block;
+        margin-bottom: .6rem;
+    }
+
+    &__form-input {
+        width: 100%;
+        border: none;
+        border-bottom: 3px solid $primary-color;
+        background-color: transparent;
+        padding: .8rem 0rem;
+        color: rgba($color-black, 0.7);
+        font-size: 1.7rem;
+        font-family: $primary-font-family;
+
+        &:focus {
+            outline: none;
+            color: #fff;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__list-item {
+        &:not(:last-child) {
+            margin-bottom: 1.7rem;
+        }
+
+        &--social-media {
+            img {
+                cursor: pointer;
+                width: 3rem;
+                display: inline-block;
+                margin-right: 1.5rem;
+                transition: all .2s;
+                &:nth-child(4) {
+                    width: 3.3rem;
+                }
+                &:hover {
+                    transform: scale(1.08);
+                }
+            }
+        }
+    }
+}

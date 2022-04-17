@@ -1,0 +1,32 @@
+.footer {
+    padding: 7rem 0;
+
+    &__panel {
+        img {
+            width: 60%;
+            display: inline-block;
+            cursor: pointer;
+        }
+        
+        &:first-child {
+            position: relative;
+            top: .6rem;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__list-item {
+        font-size: 1.4rem;
+        color: $color-grey;
+        letter-spacing: 1.5px;
+        font-weight: 300;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+}
